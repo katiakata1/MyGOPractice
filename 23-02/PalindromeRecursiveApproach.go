@@ -48,14 +48,14 @@ func isPalindromeRecursive(head **ListNode, current *ListNode) bool {
 	return true
 }
 
-func main() {
-	arr := []int{1, 2, 2, 1}
-	linkedList := toLinkedList(arr)
-	printList(linkedList)
-	fmt.Println("Is it Palindrome: ", isPalindrome(linkedList))
+// func main() {
+// 	arr := []int{1, 2, 2, 1}
+// 	linkedList := toLinkedList(arr)
+// 	printList(linkedList)
+// 	fmt.Println("Is it Palindrome: ", isPalindrome(linkedList))
 
-	arr1 := []int{3, 9, 3, 6}
-	linkedList1 := toLinkedList(arr1)
-	printList(linkedList1)
-	fmt.Println("Is it Palindrome: ", isPalindrome(linkedList1))
-}
+// 	arr1 := []int{3, 9, 3, 6}
+// 	linkedList1 := toLinkedList(arr1)
+// 	printList(linkedList1)
+// 	fmt.Println("Is it Palindrome: ", isPalindrome(linkedList1))
+// }
