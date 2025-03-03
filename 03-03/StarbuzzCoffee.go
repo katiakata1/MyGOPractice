@@ -7,18 +7,42 @@ import "fmt"
 type Beverage interface {
 	Cost() float64
 	Description() string
+	SetSize(size string)
+	GetSize() string
+}
+
+// size struct which we want to share with base coffees
+type BaseBeverage struct {
+	description string
+	size        string
+}
+
+func (bb *BaseBeverage) GetSize() string {
+	return bb.size
+}
+
+func (bb *BaseBeverage) SetSize(size string) {
+	bb.size = size
 }
 
 // Concrete component
 
-type HouseBlend struct{}
+type HouseBlend struct {
+	BaseBeverage
+}
 
 func (h *HouseBlend) Cost() float64 {
-	return 2.00
+	baseCost := 2.00
+	if h.size == "Medium" {
+		baseCost += 0.5
+	} else if h.size == "Large" {
+		baseCost += 1.00
+	}
+	return baseCost
 }
 
 func (h *HouseBlend) Description() string {
-	return "HouseBlend coffee"
+	return h.size + " HouseBlend coffee"
 }
 
 // Decorators wraps beverage and adds functionallity dinamically
@@ -35,6 +59,16 @@ func (m *Milk) Description() string {
 	return m.beverage.Description() + ", Milk"
 }
 
+// forward size-related methods to the wrapped beverages
+func (m *Milk) GetSize() string {
+	return m.beverage.GetSize()
+}
+
+func (m *Milk) SetSize(size string) {
+	m.beverage.SetSize(size)
+}
+
+// Mocha
 type Mocha struct {
 	beverage Beverage
 }
@@ -47,6 +81,15 @@ func (m *Mocha) Description() string {
 	return m.beverage.Description() + ", Mocha"
 }
 
+func (m *Mocha) GetSize() string {
+	return m.beverage.GetSize()
+}
+
+func (m *Mocha) SetSize(size string) {
+	m.beverage.SetSize(size)
+}
+
+// Whip
 type Whip struct {
 	beverage Beverage
 }
@@ -59,8 +102,17 @@ func (w *Whip) Description() string {
 	return w.beverage.Description() + ", Whip"
 }
 
+func (m *Whip) GetSize() string {
+	return m.beverage.GetSize()
+}
+
+func (m *Whip) SetSize(size string) {
+	m.beverage.SetSize(size)
+}
+
 func main() {
 	beverage := &HouseBlend{}
+	beverage.SetSize("Large")
 	fmt.Println(beverage.Description(), "Cost: ", beverage.Cost())
 
 	withMilk := &Milk{beverage}
