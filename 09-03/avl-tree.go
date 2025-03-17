@@ -132,19 +132,19 @@ func InOrderTraversal(root *Node) {
 	}
 }
 
-func main() {
-	var root *Node // Here we don't use &Node{} because we don't want to initialise immidiately
+// func main() {
+// 	var root *Node // Here we don't use &Node{} because we don't want to initialise immidiately
 
-	keys := []int{10, 20, 30, 40, 50, 25}
-	for _, key := range keys {
-		root = Insert(root, key)
-	}
+// 	keys := []int{10, 20, 30, 40, 50, 25}
+// 	for _, key := range keys {
+// 		root = Insert(root, key)
+// 	}
 
-	fmt.Println("In-order Traversal: ")
-	InOrderTraversal(root)
-	fmt.Println()
+// 	fmt.Println("In-order Traversal: ")
+// 	InOrderTraversal(root)
+// 	fmt.Println()
 
-	// Search for element
-	fmt.Println("Searching for 20: ", Search(root, 20))
-	fmt.Println("Searching for 15: ", Search(root, 15))
-}
+// 	// Search for element
+// 	fmt.Println("Searching for 20: ", Search(root, 20))
+// 	fmt.Println("Searching for 15: ", Search(root, 15))
+// }
