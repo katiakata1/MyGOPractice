@@ -36,16 +36,16 @@ func (r *RemoteControl) PressButton() {
 	r.command.execute()
 }
 
-func main() {
-	// Create receiver
-	light := &Light{}
+// func main() {
+// 	// Create receiver
+// 	light := &Light{}
 
-	// Create concrete command with receiver
-	lightOn := &LigthOnCommand{light: light}
+// 	// Create concrete command with receiver
+// 	lightOn := &LigthOnCommand{light: light}
 
-	// Create invoker and assign command
-	remote := &RemoteControl{command: lightOn}
+// 	// Create invoker and assign command
+// 	remote := &RemoteControl{command: lightOn}
 
-	// Press button to execute the command
-	remote.PressButton()
-}
+// 	// Press button to execute the command
+// 	remote.PressButton()
+// }
