@@ -102,39 +102,39 @@ func (r *RemoteControl1) PressOffButton(slot int) {
 	r.offCommands[slot].execute()
 }
 
-func main() {
-	remote := NewRemoteControl()
+// func main() {
+// 	remote := NewRemoteControl()
 
-	// Create light and fan receivers
-	livingRoomLight := &Ligth1{location: "Living Room"}
-	kitchenLight := &Ligth1{location: "Kitchen"}
-	bedroomFan := &Fan{location: "Bedroom"}
+// 	// Create light and fan receivers
+// 	livingRoomLight := &Ligth1{location: "Living Room"}
+// 	kitchenLight := &Ligth1{location: "Kitchen"}
+// 	bedroomFan := &Fan{location: "Bedroom"}
 
-	// Creating corresponding commands
-	livingRoomLightOn := &LightOnCommand1{light1: livingRoomLight}
-	livingRoomLightOff := &LightOffCommand1{light1: livingRoomLight}
+// 	// Creating corresponding commands
+// 	livingRoomLightOn := &LightOnCommand1{light1: livingRoomLight}
+// 	livingRoomLightOff := &LightOffCommand1{light1: livingRoomLight}
 
-	kitchenLightOn := &LightOnCommand1{light1: kitchenLight}
-	kitchenLightOff := &LightOffCommand1{light1: kitchenLight}
+// 	kitchenLightOn := &LightOnCommand1{light1: kitchenLight}
+// 	kitchenLightOff := &LightOffCommand1{light1: kitchenLight}
 
-	bedroomFanOn := &FanOnCommand{fan: bedroomFan}
-	bedroomFanOff := &FanOffCommand{fan: bedroomFan}
+// 	bedroomFanOn := &FanOnCommand{fan: bedroomFan}
+// 	bedroomFanOff := &FanOffCommand{fan: bedroomFan}
 
-	// Assign Commands to remote slot
-	remote.SetCommand(0, livingRoomLightOn, livingRoomLightOff)
-	remote.SetCommand(1, kitchenLightOn, kitchenLightOff)
-	remote.SetCommand(1, bedroomFanOn, bedroomFanOff)
+// 	// Assign Commands to remote slot
+// 	remote.SetCommand(0, livingRoomLightOn, livingRoomLightOff)
+// 	remote.SetCommand(1, kitchenLightOn, kitchenLightOff)
+// 	remote.SetCommand(1, bedroomFanOn, bedroomFanOff)
 
-	// Simulate button presses
-	remote.PressOnButtom(0)
-	remote.PressOffButton(0)
-	remote.PressOnButtom(1)
-	remote.PressOffButton(1)
-	remote.PressOnButtom(2)
-	remote.PressOffButton(2)
+// 	// Simulate button presses
+// 	remote.PressOnButtom(0)
+// 	remote.PressOffButton(0)
+// 	remote.PressOnButtom(1)
+// 	remote.PressOffButton(1)
+// 	remote.PressOnButtom(2)
+// 	remote.PressOffButton(2)
 
-	// Pressing unassigned slot (should do nothing)
-	remote.PressOnButtom(3)
-	remote.PressOffButton(3)
+// 	// Pressing unassigned slot (should do nothing)
+// 	remote.PressOnButtom(3)
+// 	remote.PressOffButton(3)
 
-}
+// }
