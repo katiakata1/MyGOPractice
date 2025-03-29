@@ -40,12 +40,12 @@ func Knapsack(weight []int, names []string, values []int, capacity int) int {
 
 }
 
-func main() {
-	weights := []int{2, 3, 4, 5}                               // Weights of items
-	names := []string{"Book", "Laptop", "Headphones", "Phone"} // Item names
-	values := []int{3, 4, 5, 6}                                // Values of items
-	capacity := 5                                              // Maximum weight the knapsack can carry
+// func main() {
+// 	weights := []int{2, 3, 4, 5}                               // Weights of items
+// 	names := []string{"Book", "Laptop", "Headphones", "Phone"} // Item names
+// 	values := []int{3, 4, 5, 6}                                // Values of items
+// 	capacity := 5                                              // Maximum weight the knapsack can carry
 
-	maxValue := Knapsack(weights, names, values, capacity)
-	fmt.Println("Maximum value that can be obtained:", maxValue)
-}
+// 	maxValue := Knapsack(weights, names, values, capacity)
+// 	fmt.Println("Maximum value that can be obtained:", maxValue)
+// }
