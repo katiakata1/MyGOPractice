@@ -1,0 +1,8 @@
+{ "name": "Alice", "age": 30, "activity": "login" }
+{ "name": "Bob", "age": 25, "activity": "upload" }
+{ "name": "Alice", "age": 30, "activity": "logout" }
+{ "name": "Dana", "age": 20, "activity": "login" }
+{ "name": "Bob", "age": 25, "activity": "logout" }
+{ "name": "Tom", "age": 55, "activity": "logout" }
+{ "name": "Tom", "age": 19, "activity": "upload" }
+{ "name": "Bob", "age": 25, "activity": "logout" }

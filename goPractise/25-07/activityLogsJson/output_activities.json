@@ -1,0 +1,34 @@
+[
+ {
+  "name": "Dana",
+  "age": 20,
+  "activities": [
+   "login"
+  ]
+ },
+ {
+  "name": "Bob",
+  "age": 25,
+  "activities": [
+   "upload",
+   "logout",
+   "logout"
+  ]
+ },
+ {
+  "name": "Alice",
+  "age": 30,
+  "activities": [
+   "login",
+   "logout"
+  ]
+ },
+ {
+  "name": "Tom",
+  "age": 55,
+  "activities": [
+   "logout",
+   "upload"
+  ]
+ }
+]

@@ -1,9 +1,9 @@
+// QUICKSORT - Sorting algorithm
 // swap - It avoids creating extra arrays, so it’s space-efficient (O(1) extra space)
 // we are always operating on the original array
+// Avg: O(n log n), Worst: O(n²); O(log n), not stable, Fast, in-place, divide & conquer
 
 package main
-
-import "fmt"
 
 func partition(arr []int, low, high int) int {
 	pivot := arr[high]
@@ -35,9 +35,9 @@ func quickSort(arr []int, low, high int) {
 	}
 }
 
-func main() {
-	nums := []int{4, 2, 8, 4, 1, 5, 3, 9, 13, 56, 3}
-	fmt.Println("Before:", nums)
-	quickSort(nums, 0, len(nums)-1)
-	fmt.Println("After:", nums)
-}
+// func main() {
+// 	nums := []int{4, 2, 8, 4, 1, 5, 3, 9, 13, 56, 3}
+// 	fmt.Println("Before:", nums)
+// 	quickSort(nums, 0, len(nums)-1)
+// 	fmt.Println("After:", nums)
+// }
