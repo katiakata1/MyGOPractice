@@ -1,0 +1,14 @@
+[
+ {
+  "name": "Alice",
+  "vowel_count": 3
+ },
+ {
+  "name": "Bob",
+  "vowel_count": 1
+ },
+ {
+  "name": "Jekaterina",
+  "vowel_count": 5
+ }
+]
