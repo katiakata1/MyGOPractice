@@ -1,0 +1,6 @@
+[
+    {"name": "Anna", "email": "anna@example.com", "country": "Germany"},
+    {"name": "Bob", "email": "bob@example.com", "country": "USA"},
+    {"name": "John", "email": "john@example.com", "country": "Germany"},
+    {"name": "Kate", "email": "kate@example.com", "country": "France"}
+  ]
