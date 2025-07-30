@@ -1,0 +1,18 @@
+{
+ "dev": [
+  "ajohnson",
+  "bsmith",
+  "dmiles"
+ ],
+ "production": [
+  "ajohnson",
+  "bsmith"
+ ],
+ "qa": [
+  "cwest"
+ ],
+ "staging": [
+  "ajohnson",
+  "cwest"
+ ]
+}

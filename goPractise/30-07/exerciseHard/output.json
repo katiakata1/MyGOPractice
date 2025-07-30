@@ -1,0 +1,26 @@
+[
+ {
+  "Name": "John Doe",
+  "AccessLevel": "dev,staging,production",
+  "Enabled": true,
+  "Id": "jdoe"
+ },
+ {
+  "Name": "Anderson Sterling",
+  "AccessLevel": "dev",
+  "Enabled": false,
+  "Id": "asterling"
+ },
+ {
+  "Name": "Janel Tiffany",
+  "AccessLevel": "dev,Staging",
+  "Enabled": false,
+  "Id": "jtiffany"
+ },
+ {
+  "Name": "mary maitland",
+  "AccessLevel": "staging,Production",
+  "Enabled": true,
+  "Id": "mmaitland"
+ }
+]
