@@ -1,0 +1,5 @@
+{"service": "auth", "status": "fail", "timestamp": "2025-07-29T10:00:00Z"}
+{"service": "payment", "status": "ok", "timestamp": "2025-07-29T10:01:00Z"}
+{"service": "auth", "status": "fail", "timestamp": "2025-07-29T10:02:00Z"}
+{"service": "orders", "status": "fail", "timestamp": "2025-07-29T10:03:00Z"}
+{"service": "payment", "status": "fail", "timestamp": "2025-07-29T10:04:00Z"}
