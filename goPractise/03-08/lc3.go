@@ -2,6 +2,11 @@
 // Given a string s, find the length of the longest substring without duplicate characters.
 // sliding windows approach
 
+// The point here is to save a character in the map if it doesn't exist as key and its current index as value
+// Then you ittirate through word, chech characters and if they exist in the map
+// if the do, then you check their index in the map and if it's greater or equal to index of the start, you move start to i+1
+// meaning that you one step ahead of the letter which was last seen already
+
 package main
 
 import "fmt"
